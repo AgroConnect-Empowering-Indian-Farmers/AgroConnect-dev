@@ -6,6 +6,7 @@ Based on Flutter for cross-platform  (Web and Android)
 - Analyze Image Using Pre-Trained CNN Model
 - Using Pre-defined Prompt to qeury RAG Model for Response
 - Generating Context-Aware Reponses using LLM
+- Mutli-Lingual integration for broader accessibility
 
 
 # Frontend : Android
