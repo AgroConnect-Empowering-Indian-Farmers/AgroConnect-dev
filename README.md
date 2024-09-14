@@ -29,11 +29,21 @@ Based on Flutter for cross-platform  (Web and Android)
 ## Dataset 
 
 ### Prepared and Pre-processed the Images of the Crop Diseases to create dataset of 450 + Crop diseases and Pest across India.
-
+#### Data Sources :
+-  https://agritech.tnau.ac.in/crop_protection/crop_prot.html
+-  https://plantix.net/en/library/plant-diseases/
+  
+### Description
 - Feature Extraction: The uploaded image's features are extracted using the pretrained ResNet50 model.
 - Cosine Similarity: Each uploaded image is compared with the stored embeddings using cosine similarity. The image with the highest similarity score is considered the best match.
 - Disease Prediction: The disease class associated with the most similar image is returned as the predicted disease.
 - Fine-tuning the Pretrained Model: After initial testing, fine-tuning the ResNet50 model with dataset to improve the feature extraction for crop disease images.
+  
+### Collected and Embbeded IPM and Crop Disease Infromation Documents for causes symtoms and treatments.
+#### Data Sources :
+-  https://icar.org.in/
+-  https://dare.gov.in/en
+-  https://ppqs.gov.in/
 
 ## Models
 
