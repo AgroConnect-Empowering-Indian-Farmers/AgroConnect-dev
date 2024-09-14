@@ -33,13 +33,7 @@ Based on Flutter for cross-platform  (Web and Android)
 -  https://agritech.tnau.ac.in/crop_protection/crop_prot.html
 -  https://plantix.net/en/library/plant-diseases/
   
-### Description
-- Feature Extraction: The uploaded image's features are extracted using the pretrained ResNet50 model.
-- Cosine Similarity: Each uploaded image is compared with the stored embeddings using cosine similarity. The image with the highest similarity score is considered the best match.
-- Disease Prediction: The disease class associated with the most similar image is returned as the predicted disease.
-- Fine-tuning the Pretrained Model: After initial testing, fine-tuning the ResNet50 model with dataset to improve the feature extraction for crop disease images.
-  
-### Collected and Embbeded IPM and Crop Disease Infromation Documents for causes symtoms and treatments.
+### Collected and Embbeded IPM and Crop Disease Infromation Documents for causes symptoms and treatments.
 #### Data Sources :
 -  https://icar.org.in/
 -  https://dare.gov.in/en
@@ -51,10 +45,15 @@ Based on Flutter for cross-platform  (Web and Android)
 - Loads each image from your dataset.
 - Extracts the feature embeddings using ResNet50.
 - Stores the image path, class (disease name), and corresponding feature vector in features_db
+- Feature Extraction: The uploaded image's features are extracted using the pretrained ResNet50 model.
+- Cosine Similarity: Each uploaded image is compared with the stored embeddings using cosine similarity. The image with the highest similarity score is considered the best match.
+- Disease Prediction: The disease class associated with the most similar image is returned as the predicted disease.
+- Fine-tuning the Pretrained Model: After initial testing, fine-tuning the ResNet50 model with dataset to improve the feature extraction for crop disease images.
   
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ofhbm7w5_ieNhxDtnmfKlPlw8ZnU7sO-?usp=sharing)
 
-### RAG  Notebook: Shows the ouput for the treatment and causes of the detected disease
+
+### RAG  Notebook: Shows the output for the treatment and causes of the detected disease
 - Load the Crop disease management and treatment information pdfs from the directory and create chunks of them.
 - Chunks are converted into embbedings using SENTENCE-BERT Model.
 - Embeddings are Stored in Index.
