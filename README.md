@@ -33,7 +33,7 @@ Based on Flutter for cross-platform  (Web and Android)
 -  https://agritech.tnau.ac.in/crop_protection/crop_prot.html
 -  https://plantix.net/en/library/plant-diseases/
   
-### Collected and Embbeded IPM and Crop Disease Infromation Documents for causes symptoms and treatments.
+### Collected and Embbeded Crop Mangement and Disease Information Documents for causes symptoms and treatments.
 #### Data Sources :
 -  https://icar.org.in/
 -  https://dare.gov.in/en
