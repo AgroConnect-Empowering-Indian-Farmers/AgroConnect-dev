@@ -1,4 +1,5 @@
-# AgroConnect Implementation Details :
+# AgroConnect Implementation Details : 
+- Completed with 60 % of development for the Project
 Based on Flutter for cross-platform  (Web and Android)
 
 # Features :
