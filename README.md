@@ -1,5 +1,5 @@
 # AgroConnect Implementation Details :
-Based on Flutter for cross-platform development (Web and Android)
+Based on Flutter for cross-platform  (Web and Android)
 
 # Features :
 
