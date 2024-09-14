@@ -1,1 +1,1 @@
-# AgroConnect-dev
+# AgroConnect Implementation Details :
