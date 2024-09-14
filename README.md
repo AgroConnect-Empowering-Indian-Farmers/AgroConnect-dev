@@ -24,3 +24,35 @@ Based on Flutter for cross-platform  (Web and Android)
   </tr>
 </table>
 
+# Backend : 
+
+## Dataset 
+
+### Prepared and Pre-processed the Images of the Crop Diseases to create dataset of 450 + Crop diseases and Pest across India.
+
+- Feature Extraction: The uploaded image's features are extracted using the pretrained ResNet50 model.
+- Cosine Similarity: Each uploaded image is compared with the stored embeddings using cosine similarity. The image with the highest similarity score is considered the best match.
+- Disease Prediction: The disease class associated with the most similar image is returned as the predicted disease.
+- Fine-tuning the Pretrained Model: After initial testing, fine-tuning the ResNet50 model with dataset to improve the feature extraction for crop disease images.
+
+## Models
+
+### Crop Disease  Notebook: Shows the output of predicted disease using CNN Model
+- Loads each image from your dataset.
+- Extracts the feature embeddings using ResNet50.
+- Stores the image path, class (disease name), and corresponding feature vector in features_db
+  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ofhbm7w5_ieNhxDtnmfKlPlw8ZnU7sO-?usp=sharing)
+
+### RAG  Notebook: Shows the ouput for the treatment and causes of the detected disease
+- Loads the pdfs from the directory and create chunks of them.
+- Chunks are converted into embbedings using SENTENCE-BERT Model.
+- Embeddings are Stored in Index.
+- Semantic Search is Carried with respective to query defined for Context Retrival.
+- LLM generates Context-Aware Answers accordingly to the context and prompt.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ODZAAp9d_9-2mnsMZkVZMBwfihKWLdPH?usp=sharing)
+
+
+
+
